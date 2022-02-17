@@ -1,8 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&display=swap');
 
+:root{
+	--background-color: hsla(263, 90%, 61%, 1);
+  --text-color-light: hsla(193, 5%, 92%, 1);
+  --thead-color: rgb(61, 30, 112);
+  --trow-dark:rgb(93, 2, 238);
+  --trow-light: rgb(216, 193, 255);
+}
+
 * {
   font-family: 'Cabin', sans-serif;
+  font-weight: 400;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+h1,
+h2,
+thead,
+thead td {
+  font-weight: 600;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color-light);
+  padding: 5%;
+}
+
+.margin-tb {
+  margin: 10px 0;
+}
+
+table {
+  border: solid 1px var(--text-color-light);
+  border-spacing: 0;
+}
+
+.table-head {
+  background-color: var(--thead-color);
+}
+
+td, 
+tr, 
+th {
+  padding:0.5em;
+  border-style: none;
+}
+tr {
+  background-color: var(--trow-light);
+}
+tr:nth-of-type(even) {
+  background-color: var(--trow-dark);
+}
+
+
+
+
