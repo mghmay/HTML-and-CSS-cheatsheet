@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Specificity and Selectors</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Specificity and Selectors</h1>
+    </header>
+    <main>
+        <section id = "hierarchy">
+            <table>
+                <thead>
+                    <td>
+                      Selector (in order from most to least specific)
+                    </td>
+                    <td>
+                      Selector weight
+                    </td>
+                    <td>
+                      Description
+                    </td>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Inline styles
+                    </td>
+                    <td>
+                      1000
+                    </td>
+                    <td>
+                      These are styles which are placed directly in the html body. Usind the style attribute i.e. style=""
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      IDs
+                    </td>
+                    <td>
+                      100
+                    </td>
+                    <td>
+                      These elements are selected using the '#' i.e. #navbar
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Classes, psuedo-classes, attribute selectors
+                    </td>
+                    <td>
+                      10
+                    </td>
+                    <td>
+                      Classes are selected using the '.' i.e. .bold. Psuedo-classes also fall under this catagory i.e. :hover. As do attribute selectors using square brackets i.e. [href].
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Elements and psuedo-elements
+                    </td>
+                    <td>
+                      1
+                    </td>
+                    <td>
+                      These elements are selected using the their HTML code i.e. h1. Psuedo elements also fall under this catagory i.e. :before.
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+            <p>
+              For more information on CSS selectors. See this reference guide:
+               <a href = "https://www.w3schools.com/cssref/css_selectors.asp" target = "_blank">
+                CSS Selector Reference
+              </a>
+            </p>
+        </section>
+    </main>
+    
+</body>
+</html>
