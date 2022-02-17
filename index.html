@@ -92,7 +92,7 @@
         </section>
         <section id = "calculate">
           <h2>Specificity</h2>
-          <p>Start at 0, add 100 for each ID value, add 10 for each class value (or pseudo-class or attribute selector), add 1 for each element selector or pseudo-element.</p>
+          <p>Start at 0, add 100 for each ID value, add 10 for each class value (or pseudo-class or attribute selector), add 1 for each element selector or pseudo-element. The higher value wins the style.</p>
           <h3>Examples</h3>
           <table>
             <thead>
@@ -103,28 +103,87 @@
                 Specificity calculation
               </td>
               <td>
-                What is selects
+                What is selected
               </td>
             </thead>
             <tbody>
-              <td>
-                P
-              </td>
-              <td>
-                1
-              </td>
-              <td>
-                All paragraphs in the body
-              </td>
-              <td>
-                P.test
-              </td>
-              <td>
-                1
-              </td>
-              <td>
-                All paragraphs in the body
-              </td>
+              <tr>
+                <td>
+                  p
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  All paragraphs in the body
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  p.test
+                </td>
+                <td>
+                  1 + 10 = 11
+                </td>
+                <td>
+                  All paragraphs with the class of 'test'
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  p#demo
+                </td>
+                <td>
+                  1 + 100 = 101
+                </td>
+                <td>
+                  All paragraphs with the ID of 'demo'.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &#60;p style="color: pink;"&#62;
+                </td>
+                <td>
+                  1000
+                </td>
+                <td>
+                  The specific paragraph with the style declatation.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  #demo
+                </td>
+                <td>
+                  100
+                </td>
+                <td>
+                  The element with this ID.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  .test
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  The element with this class.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  p.test1.test2
+                </td>
+                <td>
+                  1 + 10 + 10 = 21
+                </td>
+                <td>
+                  All paragraphs with both the test1 and test 2 classes.
+                </td>
+              </tr>
             </tbody>
           </table>
         </section>
