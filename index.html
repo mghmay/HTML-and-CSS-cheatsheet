@@ -12,6 +12,7 @@
     </header>
     <main>
         <section id = "hierarchy">
+            <h2>Selectors</h2>
             <table>
                 <thead>
                     <td>
@@ -33,7 +34,7 @@
                       1000
                     </td>
                     <td>
-                      These are styles which are placed directly in the html body. Usind the style attribute i.e. style=""
+                      These are styles which are placed directly in the html body. Using the style attribute i.e. <em>style=""</em>.
                     </td>
                   </tr>
                   <tr>
@@ -44,7 +45,7 @@
                       100
                     </td>
                     <td>
-                      These elements are selected using the '#' i.e. #navbar
+                      These elements are selected using the <em>#</em> i.e. <em>#navbar</em>
                     </td>
                   </tr>
                   <tr>
@@ -55,7 +56,7 @@
                       10
                     </td>
                     <td>
-                      Classes are selected using the '.' i.e. .bold. Psuedo-classes also fall under this catagory i.e. :hover. As do attribute selectors using square brackets i.e. [href].
+                      Classes are selected using the <em>.</em>. i.e. <em>.bold</em>. Psuedo-classes also fall under this catagory i.e. <em>:hover</em>. As do attribute selectors using square brackets i.e. <em>[href]</em>.
                     </td>
                   </tr>
                   <tr>
@@ -66,7 +67,18 @@
                       1
                     </td>
                     <td>
-                      These elements are selected using the their HTML code i.e. h1. Psuedo elements also fall under this catagory i.e. :before.
+                      These elements are selected using the their HTML code i.e. <em>h1</em>. Psuedo elements also fall under this catagory i.e. <em>:before</em>.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Universal selector
+                    </td>
+                    <td>
+                      0
+                    </td>
+                    <td>
+                      This is usually declared at the beginning of a document using <em>*</em>.
                     </td>
                   </tr>
                 </tbody>
@@ -77,6 +89,44 @@
                 CSS Selector Reference
               </a>
             </p>
+        </section>
+        <section id = "calculate">
+          <h2>Specificity</h2>
+          <p>Start at 0, add 100 for each ID value, add 10 for each class value (or pseudo-class or attribute selector), add 1 for each element selector or pseudo-element.</p>
+          <h3>Examples</h3>
+          <table>
+            <thead>
+              <td>
+                Selector
+              </td>
+              <td>
+                Specificity calculation
+              </td>
+              <td>
+                What is selects
+              </td>
+            </thead>
+            <tbody>
+              <td>
+                P
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                All paragraphs in the body
+              </td>
+              <td>
+                P.test
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                All paragraphs in the body
+              </td>
+            </tbody>
+          </table>
         </section>
     </main>
     
