@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&display=swap');
 
 :root{
-	--background-color: hsla(263, 90%, 61%, 1);
+	--background-color: rgb(119, 58, 218);
   --text-color-light: hsla(193, 5%, 92%, 1);
   --thead-color: rgb(61, 30, 112);
   --trow-dark:rgb(93, 2, 238);
@@ -38,8 +38,10 @@ table {
   border-spacing: 0;
 }
 
-.table-head {
+th {
   background-color: var(--thead-color);
+  color: var(--text-color-light);
+  text-align: left;
 }
 
 td, 
@@ -49,10 +51,18 @@ th {
   border-style: none;
 }
 tr {
-  background-color: var(--trow-light);
-}
-tr:nth-of-type(even) {
   background-color: var(--trow-dark);
+}
+tr:nth-of-type(odd) {
+  background-color: var(--trow-light);
+  color: var(--trow-dark)
+}
+a {
+  text-decoration: none;
+  color: var(--thead-color)
+}
+a:hover {
+  color: var(--text-color-light)
 }
 
 
