@@ -58,7 +58,7 @@ tr:nth-of-type(odd) {
   color: var(--trow-dark)
 }
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--thead-color)
 }
 a:hover {
